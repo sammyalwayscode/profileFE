@@ -38,3 +38,11 @@ export const removeProfile = async (id: string | any) => {
     .then((res) => res.data)
     .catch((err) => err);
 };
+
+// Update Profile
+export const updateProfile = async (id: string | any) => {
+  return await axios
+    .patch(`${url}/profile/editprofile/${id}`)
+    .then((res) => res.data)
+    .catch((err) => err);
+};
