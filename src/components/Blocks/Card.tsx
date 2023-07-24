@@ -43,6 +43,16 @@ const Card = () => {
               <NameAgeHold>
                 <Name> {props.name} </Name>
                 <Name>{props.age}</Name>
+                <Link to={`/editprofile/${props._id}`}>
+                  <Name
+                    style={{
+                      color: "blueviolet",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Edit
+                  </Name>
+                </Link>
                 <Age onClick={() => handleDelete(props._id)}>DELETE</Age>
               </NameAgeHold>
             </Wrapper>
