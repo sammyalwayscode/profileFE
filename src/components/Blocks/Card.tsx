@@ -15,7 +15,7 @@ const Card = () => {
   const client = useQueryClient();
   const getAllProfile = useQuery({
     queryFn: getProfile,
-    queryKey: ["users profile"],
+    queryKey: ["usersProfile"],
   });
   const profiler = getAllProfile?.data?.data;
 

@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// const url = "https://profiler-kek7.onrender.com/api";
 const url = "http://localhost:3033/api";
 
 //get data
